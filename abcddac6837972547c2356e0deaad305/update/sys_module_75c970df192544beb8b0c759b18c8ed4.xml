@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[import { gs, GlideDateTime } from '@servicenow/glide'
+
+export function setComplaintDefaults(current, previous) {
+  // Auto-generate complaint number if not set
+  if (gs.nil(current.getValue('complaint_number'))) {
+    current.setValue('complaint_number', gs.generateGUID())
+  }
+
+  // Set reported date to current time if not set
+  if (gs.nil(current.getValue('sys_created_on'))) {
+    const now = new GlideDateTime()
+    current.setValue('sys_created_on', now.getDisplayValue())
+  }
+
+  // If complainant chooses to be anonymous, clear personal info
+  if (current.getValue('is_anonymous') === 'true') {
+    current.setValue('complainant_email', '')
+    current.setValue('complainant_phone', '')
+    current.setValue('complainant_name', 'Anonymous')
+  }
+
+  // Auto-set priority based on severity and complaint type
+  const severityLevel = current.getValue('severity_level')
+  const complaintType = current.getValue('complaint_type')
+  
+  if (severityLevel === 'life_threatening' || 
+      (complaintType === 'reckless_driving' && severityLevel === 'severe')) {
+    current.setValue('priority', 'critical')
+  } else if (severityLevel === 'severe') {
+    current.setValue('priority', 'high')
+  } else if (severityLevel === 'moderate') {
+    current.setValue('priority', 'medium')
+  } else {
+    current.setValue('priority', 'low')
+  }
+
+  gs.addInfoMessage('Road safety complaint has been submitted successfully. Complaint number: ' + current.getValue('complaint_number'))
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1536901_road_saf/x-1536901-road-safety/1.0.0/src/server/complaint-business-logic.js</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-15 09:42:00</sys_created_on>
+        <sys_id>75c970df192544beb8b0c759b18c8ed4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1536901_road_saf/x-1536901-road-safety/1.0.0/src/server/complaint-business-logic.js</sys_name>
+        <sys_package display_value="Road Safety" source="x_1536901_road_saf">abcddac6837972547c2356e0deaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Road Safety">abcddac6837972547c2356e0deaad305</sys_scope>
+        <sys_update_name>sys_module_75c970df192544beb8b0c759b18c8ed4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 09:42:00</sys_updated_on>
+    </sys_module>
+</record_update>

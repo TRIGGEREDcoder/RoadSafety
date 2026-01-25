@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>road_safety_complaint_view</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-15 09:41:59</sys_created_on>
+        <sys_id>5d20ded84efd4f5aa33c6086bcce2ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Road Safety Complaint View</sys_name>
+        <sys_package display_value="Road Safety" source="x_1536901_road_saf">abcddac6837972547c2356e0deaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Road Safety">abcddac6837972547c2356e0deaad305</sys_scope>
+        <sys_update_name>sys_ui_view_5d20ded84efd4f5aa33c6086bcce2ace</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 09:41:59</sys_updated_on>
+        <title>Road Safety Complaint View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

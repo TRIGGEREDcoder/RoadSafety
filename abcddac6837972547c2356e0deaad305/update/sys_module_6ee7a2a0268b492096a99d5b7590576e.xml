@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[{
+  "name": "x-1536901-road-safety",
+  "version": "1.0.0",
+  "description": "[BUILD AGENT GENERATED]:  A comprehensive application for citizens to raise road safety complaints while crossing roads, directed to traffic police and higher authorities. Includes a dashboard interface for easy complaint submission and tracking.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "now-sdk build",
+    "deploy": "now-sdk install",
+    "transform": "now-sdk transform",
+    "types": "now-sdk dependencies"
+  },
+  "devDependencies": {
+    "@servicenow/sdk": "4.1.1",
+    "@servicenow/glide": "26.0.1",
+    "eslint": "8.50.0",
+    "@servicenow/eslint-plugin-sdk-app-plugin": "4.1.1"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1536901_road_saf/x-1536901-road-safety/1.0.0/package.json</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-15 09:42:00</sys_created_on>
+        <sys_id>6ee7a2a0268b492096a99d5b7590576e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1536901_road_saf/x-1536901-road-safety/1.0.0/package.json</sys_name>
+        <sys_package display_value="Road Safety" source="x_1536901_road_saf">abcddac6837972547c2356e0deaad305</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Road Safety">abcddac6837972547c2356e0deaad305</sys_scope>
+        <sys_update_name>sys_module_6ee7a2a0268b492096a99d5b7590576e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 09:42:00</sys_updated_on>
+    </sys_module>
+</record_update>
