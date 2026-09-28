@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="07e06a8683f172547c2356e0deaad3d2" label="Road Safety Complaint" max_length="40" name="x_1536901_road_saf_complaint" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="moderate" label="Severity Level" max_length="40" name="severity_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Severe" sequence="2" value="severe"/>
+                <element inactive_on_update="false" label="Life Threatening" sequence="3" value="life_threatening"/>
+                <element inactive_on_update="false" label="Minor" sequence="0" value="minor"/>
+                <element inactive_on_update="false" label="Moderate" sequence="1" value="moderate"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Resolution Notes" max_length="4000" name="resolution_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone Number" max_length="20" name="complainant_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Complaint Number" max_length="40" name="complaint_number" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Anonymous Complaint" max_length="40" name="is_anonymous" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="160" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Complaint Type" mandatory="true" max_length="40" name="complaint_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Parking Violations" sequence="6" value="parking_violation"/>
+                <element inactive_on_update="false" label="Reckless Driving" sequence="2" value="reckless_driving"/>
+                <element inactive_on_update="false" label="Other" sequence="7" value="other"/>
+                <element inactive_on_update="false" label="Pedestrian Crossing Issues" sequence="3" value="pedestrian_crossing"/>
+                <element inactive_on_update="false" label="Traffic Signal Issue" sequence="0" value="traffic_signal"/>
+                <element inactive_on_update="false" label="Poor Road Conditions" sequence="4" value="road_condition"/>
+                <element inactive_on_update="false" label="Unsafe Crossing Conditions" sequence="1" value="crossing_safety"/>
+                <element inactive_on_update="false" label="Speeding Violations" sequence="5" value="speeding"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Detailed Description" mandatory="true" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Incident Date &amp; Time" mandatory="true" max_length="40" name="incident_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="new" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+                <element inactive_on_update="false" label="Assigned" sequence="1" value="assigned"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="5" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Resolved" sequence="3" value="resolved"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Complainant Name" mandatory="true" max_length="100" name="complainant_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="20" name="latitude" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Location/Address" mandatory="true" max_length="500" name="location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="medium" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assigned Group" max_length="32" name="assigned_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved Date" max_length="40" name="resolved_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Email Address" max_length="100" name="complainant_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="20" name="longitude" type="decimal"/>
+        <index name="index">
+            <element name="assigned_group"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

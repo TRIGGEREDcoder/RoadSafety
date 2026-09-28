@@ -4,6 +4,8 @@
         <can_delegate>false</can_delegate>
         <description>Citizens who can submit road safety complaints</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <federated_id>MRF0UNahcdCOrKJq6GSCgHgSCkg0xya8nQ+BECtKFDU=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1536901_road_saf.citizen</name>

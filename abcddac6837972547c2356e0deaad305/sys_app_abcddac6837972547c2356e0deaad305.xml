@@ -17,6 +17,7 @@
         <menu/>
         <name>Road Safety</name>
         <package_json display_value="x_1536901_road_saf/x-1536901-road-safety/1.0.0/package.json" path="x_1536901_road_saf/x-1536901-road-safety/1.0.0/package.json">x_1536901_road_saf/x-1536901-road-safety/1.0.0/package.json</package_json>
+        <package_resolver_version>1.0.0</package_resolver_version>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -29,12 +30,12 @@
         <subscription_entitlement/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
-        <sys_created_by/>
-        <sys_created_on/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-25 06:25:21</sys_created_on>
         <sys_id>abcddac6837972547c2356e0deaad305</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-25 06:25:21</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
@@ -42,6 +43,12 @@
         <vendor/>
         <vendor_prefix/>
         <version>1.0.0</version>
+        <x_snc_devtools_documentation_url/>
+        <x_snc_devtools_maintainer/>
+        <x_snc_devtools_maintainer_email/>
+        <x_snc_devtools_repo_url/>
+        <x_snc_devtools_showstopper>false</x_snc_devtools_showstopper>
+        <x_snc_devtools_showstopper_details/>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=abcddac6837972547c2356e0deaad305"/>
 </record_update>

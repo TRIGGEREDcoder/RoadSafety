@@ -4,6 +4,8 @@
         <can_delegate>true</can_delegate>
         <description>Supervisors and higher authorities who can oversee all complaints</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <federated_id>H/FRx3PnqJz8PCrxtiH8y9gGXmNNOUzrvN56TQlt0Dk=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1536901_road_saf.supervisor</name>

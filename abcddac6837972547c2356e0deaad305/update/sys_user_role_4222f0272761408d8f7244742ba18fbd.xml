@@ -4,6 +4,8 @@
         <can_delegate>true</can_delegate>
         <description>Traffic police officers who can view and manage complaints</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <federated_id>WIOpmgOzEYVFjq3N5w0TNJZNJKit9bU4kQM7FrASsCQ=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1536901_road_saf.officer</name>
